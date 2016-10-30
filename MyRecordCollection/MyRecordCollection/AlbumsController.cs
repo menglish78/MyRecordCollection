@@ -17,7 +17,7 @@ namespace MyRecordCollection
         // GET: Albums
         public ActionResult Index()
         {
-            return View(db.Categories.ToList());
+            return View(db.Albums.ToList());
         }
 
         // GET: Albums/Details/5
@@ -27,7 +27,7 @@ namespace MyRecordCollection
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Album album = db.Categories.Find(id);
+            Album album = db.Albums.Find(id);
             if (album == null)
             {
                 return HttpNotFound();
@@ -50,7 +50,7 @@ namespace MyRecordCollection
         {
             if (ModelState.IsValid)
             {
-                db.Categories.Add(album);
+                db.Albums.Add(album);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -65,7 +65,7 @@ namespace MyRecordCollection
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Album album = db.Categories.Find(id);
+            Album album = db.Albums.Find(id);
             if (album == null)
             {
                 return HttpNotFound();
@@ -96,7 +96,7 @@ namespace MyRecordCollection
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Album album = db.Categories.Find(id);
+            Album album = db.Albums.Find(id);
             if (album == null)
             {
                 return HttpNotFound();
@@ -109,8 +109,8 @@ namespace MyRecordCollection
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Album album = db.Categories.Find(id);
-            db.Categories.Remove(album);
+            Album album = db.Albums.Find(id);
+            db.Albums.Remove(album);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

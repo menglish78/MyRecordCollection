@@ -8,6 +8,6 @@ namespace MyRecordCollection.Models
 {
     public class AlbumContext : DbContext
     {
-        public DbSet<Album> Categories { get; set; }
+        public DbSet<Album> Albums { get; set; }
     }
 }
