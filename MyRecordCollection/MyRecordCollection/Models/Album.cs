@@ -11,5 +11,7 @@ namespace MyRecordCollection.Models
         public string Title { get; set; }
         public string Artist { get; set; }
         public int Year { get; set; }
+        public string Label { get; set; }
+        public string Format { get; set; }
     }
 }

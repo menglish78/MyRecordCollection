@@ -46,7 +46,7 @@ namespace MyRecordCollection
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "AlbumID,Title,Artist,Year")] Album album)
+        public ActionResult Create([Bind(Include = "AlbumID,Title,Artist,Year,Label,Format")] Album album)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace MyRecordCollection
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "AlbumID,Title,Artist,Year")] Album album)
+        public ActionResult Edit([Bind(Include = "AlbumID,Title,Artist,Year,Label,Format")] Album album)
         {
             if (ModelState.IsValid)
             {
