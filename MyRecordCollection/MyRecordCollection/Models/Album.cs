@@ -9,5 +9,6 @@ namespace MyRecordCollection.Models
     {
         public int AlbumID { get; set; }
         public string Title { get; set; }
+        public string Artist { get; set; }
     }
 }

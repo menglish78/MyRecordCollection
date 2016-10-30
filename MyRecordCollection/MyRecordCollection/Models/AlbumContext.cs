@@ -9,5 +9,10 @@ namespace MyRecordCollection.Models
     public class AlbumContext : DbContext
     {
         public DbSet<Album> Albums { get; set; }
+
+        public AlbumContext()
+        {
+            Database.SetInitializer<AlbumContext>(new DropCreateDatabaseIfModelChanges<AlbumContext>());
+        }
     }
 }
