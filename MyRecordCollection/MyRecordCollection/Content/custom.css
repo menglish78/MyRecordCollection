@@ -1,5 +1,7 @@
 ﻿body {
     font-family: "Lato", sans-serif;
+    color: #1d1e18;
+    background-color: #f7fff7;
 }
 
 h1,
@@ -15,4 +17,42 @@ h6,
 .h5,
 .h6 {
     font-family: "Lato", sans-serif;
+}
+
+.navbar-inverse {
+  background-color: #0b4f6c;
+  border-color: #f0803c;
+}
+
+.navbar-fixed-top {
+    border-width: 0 0 5px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #f7fff7;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #01baef;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #01baef;
+  background-color: transparent;
+}
+
+a {
+    color: #0b4f6c;
+}
+
+a:hover {
+    color: #01baef;
+}
+
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #deffde;
 }
