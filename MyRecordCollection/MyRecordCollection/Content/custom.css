@@ -60,3 +60,7 @@ a:hover {
 .navbar-inverse .navbar-nav  li  a {
   color: #f7fff7;
 }
+
+.text-danger {
+    color: red;
+}
