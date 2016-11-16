@@ -9,6 +9,7 @@
 <p>
     @Html.ActionLink("Add an Album", "Create")
 </p>
+<!--Table for database content-->
 <table class="table table-hover">
     <tr>
         <th>
@@ -29,6 +30,7 @@
         <th></th>
     </tr>
 
+<!--Populate table with database contents-->
 @foreach (var item in Model.OrderBy(x => x.Artist)) {
     <tr>
         <td>
